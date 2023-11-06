@@ -1,0 +1,386 @@
+Screenshot 2022-07-12 at 22-59-38 freeCodeCamp.org
+Is my code still incomplete?
+
+My code so far
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>HTML5 Documantaion</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>
+            <h1>HTML5 Documantaion</h1>
+        </header>
+        <ul>
+            <li><a class="nav-link" href="#introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#what_you_should_already_know">What you should already know</a></li>
+            <li><a class="nav-link" href="#html_and_css">HTML and CSS</a></li>
+            <li><a class="nav-link" href="#hello_world">Hello World</a></li>
+            <li><a class="nav-link" href="#html_text_fundamentals">HTML Text Fundamentals</a></li>
+            <li><a class="nav-link" href="#creating_hyperlinks">Creating Hyperlinks</a></li>
+
+            <li><a class="nav-link" href="#reference">Reference</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section id="introduction" class="main-section">
+            <header>
+                Introduction
+            </header>
+            <article>
+                <p>HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning
+                    and structure of web content. Other technologies besides HTML are generally used to describe a web
+                    page's appearance/presentation (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>)
+                    or functionality/behavior (<a
+                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>).</p>
+                <p>HTML uses "markup" to annotate text, images, and other content for display in a Web browser. HTML
+                    markup includes special "elements" such as &lt;head&gt;, &lt;title&gt;, &lt;body&gt;,
+                    &lt;header&gt;, &lt;footer&gt;, &lt;article&gt;, &lt;section&gt;, &lt;p&gt;, &lt;div&gt;,
+                    &lt;span&gt;, &lt;img&gt;, &lt;aside&gt;, &lt;audio&gt;, &lt;embed&gt;, &lt;nav&gt;, &lt;video&gt;,
+                    &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt; and many others.</p>
+            </article>
+        </section>
+        <section id="what_you_should_already_know" class="main-section">
+            <header>
+
+                What you should already know
+
+
+            </header>
+            <article>
+                <p>This guide assumes you have the following basics background:</p>
+                <ul>
+                    <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+                    <li>How to open the notepad and work in it.</li>
+                </ul>
+            </article>
+        </section>
+        <section id="html_and_css" class="main-section">
+            <header>
+                HTML and CSS
+            </header>
+            <article>
+                <p>HTML (Hypertext Mark-up Language) and CSS (Cascading Style Sheets) are two of the core web scripting
+                    languages for building web pages and web applications.</p>
+                HTML provides web pages’ structure, whereas CSS is mainly used to control the styling and layout (visual
+                and aural) of web pages. HTML provides tags that are surrounding the content of any web page
+                elements.HTML markup consists of different types of components, including tags, entity references,
+                character-based types, and references. CSS is the style sheet language for describing web pages’
+                presentation and design, including colors, fonts, and layouts. It is mainly designed to enable the
+                distinction between presentation and content, including colors, layouts, and fronts.
+            </article>
+        </section>
+        <section id="hello_world" class="main-section">
+            <header>
+                Hello World
+            </header>
+            <article>
+                <p>To get started with writing HTML, open the Notepad and write your first "Hello World" HTML Code. </p>
+                <!-- html code starts -->
+                <pre>
+                    <code>
+        <span>&lt;!DOCTYPE html&gt;</span>
+        <span>&lt;html&gt;</span>
+        <span>&lt;head&gt;</span>
+            <span>&lt;title&gt;My First Webpage&lt;/title&gt;</span>
+        <span>&lt;/head&gt;</span>
+        <span>&lt;body&gt;</span>
+            <span>&lt;p&gt;Hello World!&lt;/p&gt;</span>
+        <span>&lt;/body&gt;</span>
+        <span>&lt;/html&gt;</span>
+                    </code>
+                </pre>
+                <!-- html code ends -->
+                <p>You may also copy and paste this code into a new file in your text editor or IDE, and save the file
+                    as "index.html". The "index.html" file is the default file that a web server will look for when
+                    accessing a website. After saving the file, you can double click it to open it with your browser.
+                </p>
+            </article>
+        </section>
+        <section id="html_text_fundamentals" class="main-section">
+            <header>
+                HTML Text Fundamentals
+            </header>
+            <article>
+                <p>One of HTML's main jobs is to give text structure so that a browser can display an HTML document the
+                    way its developer intends. This article explains the way HTML can be used to structure a page of
+                    text by adding headings and paragraphs, emphasizing words, creating lists, and more.</p>
+                <p class="bold">The basics: headings and paragraphs</p>
+                <p>Most structured text consists of headings and paragraphs, whether you are reading a story, a
+                    newspaper, a college textbook, a magazine, etc.</p>
+                <p>Structured content makes the reading experience easier and more enjoyable.</p>
+                <p>In HTML, each paragraph has to be wrapped in a <code>&lt;p&gt;</code> element, like so:</p>
+                <pre>
+                    <code>
+        &lt;p&gt;I am a paragraph, oh yes I am.&lt;/p&gt;
+
+                    </code>
+                </pre>
+                <p>Each heading has to be wrapped in a heading element:</p>
+                <pre>
+                    <code>
+        &lt;h1&gt;I am the title of the story.&lt;/h1&gt;
+
+                    </code>
+                </pre>
+                <p>There are six heading elements: &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, and
+                    &lt;h6&gt;. Each element represents a different level of content in the document; &lt;h1&gt;
+                    represents the main heading, &lt;h2&gt; represents subheadings, &lt;h3&gt; represents
+                    sub-subheadings, and so on.</p>
+                <p class="bold">Implementing structural hierarchy</p>
+                <p>For example, in this story, the &lt;h1&gt; element represents the title of the story, the &lt;h2&gt;
+                    elements represent the title of each chapter, and the &lt;h3&gt; elements represent sub-sections of
+                    each chapter:</p>
+                <pre>
+                    <code>
+        &lt;h1&gt;The Crushing Bore&lt;/h1&gt;
+
+        &lt;p&gt;By Chris Mills&lt;/p&gt;
+
+        &lt;h2&gt;Chapter 1: The dark night&lt;/h2&gt;
+
+        &lt;p&gt;It was a dark night. Somewhere, an owl hooted. The rain lashed down on the ...&lt;/p&gt;
+
+        &lt;h2&gt;Chapter 2: The eternal silence&lt;/h2&gt;
+
+        &lt;p&gt;Our protagonist could not so much as a whisper out of the shadowy figure ...&lt;/p&gt;
+
+        &lt;h3&gt;The specter speaks&lt;/h3&gt;
+
+        &lt;p&gt;Several more hours had passed, when all of a sudden the specter sat bolt upright and exclaimed, "Please have mercy on my soul!"&lt;/p&gt;
+
+                    </code>
+                </pre>
+                <p>It's really up to you what the elements involved represent, as long as the hierarchy makes sense. You
+                    just need to bear in mind a few best practices as you create such structures:</p>
+                <ul>
+                    <li>Preferably, you should use a single &lt;h1&gt; per page—this is the top level heading, and all
+                        others sit below this in the hierarchy.</li>
+                    <li>Make sure you use the headings in the correct order in the hierarchy. Don't use &lt;h3&gt;
+                        elements to represent subheadings, followed by &lt;h2&gt; elements to represent
+                        sub-subheadings—that doesn't make sense and will lead to weird results.</li>
+                    <li>Of the six heading levels available, you should aim to use no more than three per page, unless
+                        you feel it is necessary. Documents with many levels (for example, a deep heading hierarchy)
+                        become unwieldy and difficult to navigate. On such occasions, it is advisable to spread the
+                        content over multiple pages if possible.</li>
+                </ul>
+                <p class="bold">Why do we need structure?</p>
+                <ul>
+                    <li>Users looking at a web page tend to scan quickly to find relevant content, often just reading
+                        the headings, to begin with. (We usually spend a very short time on a web page.) If they can't
+                        see anything useful within a few seconds, they'll likely get frustrated and go somewhere else.
+                    </li>
+                    <li>Search engines indexing your page consider the contents of headings as important keywords for
+                        influencing the page's search rankings. Without headings, your page will perform poorly in terms
+                        of SEO (Search Engine Optimization).</li>
+                    <li>Severely visually impaired people often don't read web pages; they listen to them instead. This
+                        is done with software called a screen reader. This software provides ways to get fast access to
+                        given text content. Among the various techniques used, they provide an outline of the document
+                        by reading out the headings, allowing their users to find the information they need quickly. If
+                        headings are not available, they will be forced to listen to the whole document read out loud.
+                    </li>
+                    <li>To style content with CSS, or make it do interesting things with JavaScript, you need to have
+                        elements wrapping the relevant content, so CSS/JavaScript can effectively target it.</li>
+                </ul>
+                <p>Therefore, we need to give our content structural markup.</p>
+            </article>
+        </section>
+        <section id="creating_hyperlinks" class="main-section">
+            <header>
+                Creating Hyperlinks
+            </header>
+            <article>
+                <p>Hyperlinks are one of the most exciting innovations the Web has to offer. They've been a feature of
+                    the Web since the beginning, and are what makes the Web a <em>web</em>. Hyperlinks allow us to link
+                    documents to other documents or resources, link to specific parts of documents, or make apps
+                    available at a web address. Almost any web content can be converted to a link so that when clicked
+                    or otherwise activated the web browser goes to another web address (<abbr
+                        title="Uniform Resource Locators">URL</abbr>). </p>
+                <p class="bold">Anatomy of a link</p>
+                <p>A basic link is created by wrapping the text or other content, see Block level links, inside an
+                    &lt;a&gt; element and using the href attribute, also known as a Hypertext Reference, or target, that
+                    contains the web address.</p>
+                <pre>
+                        <code>
+&lt;p&gt;I'm creating a link to
+&lt;a href="https://www.mozilla.org/en-US/"&gt;the Mozilla homepage&lt;/a&gt;.
+&lt;/p&gt;
+                                
+                        </code>
+                    </pre>
+            </article>
+
+        </section>
+        <section id="reference" class="main-section">
+            <header>
+                Reference
+            </header>
+            <article>
+                <ul>
+                    <li>All the documantaion in this page is taken from <a
+                            href="https://developer.mozilla.org/en-US/docs/Learn/HTML">MDN</a></li>
+                </ul>
+
+            </article>
+        </section>
+
+    </main>
+</body>
+
+</html>
+
+styles.css
+
+html,
+body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+header {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: thin;
+}
+
+#main-doc header {
+  text-align: left;
+  font-weight: bold;
+  margin: 0px;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: #4d4e53;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar li:last-of-type {
+  border-bottom: 1px solid;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+.bold {
+  font-weight: bold;
+  color: black;
+}
+
+section article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px) {
+  #main-doc header {
+    text-align: center;
+  }
+
+  .bold {
+    text-align: center;
+  }
+
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 330px;
+  }
+}
+
+@media only screen and (max-width: 328px) {
+  #main-doc {
+    margin-left: -10px;
+    margin-top: 360px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
